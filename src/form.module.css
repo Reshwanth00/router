@@ -1,0 +1,369 @@
+/* Your existing CSS */
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #E3E5F5;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .headerLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerMiddle {
+    display: flex;
+    align-items: center;
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileicon {
+    align-items: center;
+    border-left: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Blank {
+    width: 20px;
+  }
+  
+  .pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #c9660f;
+  }
+  
+  .Collaborators {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .help {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .Collaborators:hover,
+  .help:hover {
+    background-color: lavender;
+  }
+  
+  .headerIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .newCustomerForm {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c9660f;
+  }
+  
+  .Text {
+    margin-left: 30px;
+    border-left: 1px solid #0b0b9e;
+    padding: 5px;
+  }
+  
+  .blueStripe {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #c9660f;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .invoiceText1,
+  .invoiceText2,
+  .invoiceText3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+   
+   
+    
+  }
+  
+  .invoiceText1:hover,
+  .invoiceText2:hover,
+  .invoiceText3:hover {
+    background-color: #d8c8b9;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .companyName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .searchbox,
+  .searchbox1,
+  .searchdropdown1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-dropdown button {
+    padding: 5px 10px;
+    background-color: #0b0b9e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-dropdown button:hover {
+    background-color: #0b0b9e;
+  }
+  
+  .sidebar {
+    background-color: #333333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    margin-top: 113px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .sidebar li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar li:hover {
+    background-color: #c9660f;
+  }
+  
+  .sidebarIcon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+    margin-top: 30px;
+    overflow-y: auto;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #E3E5F5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .header2 {
+    display: flex;
+    justify-content: center;
+   
+  }
+  .head{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #E3E5F5;
+  
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+  
+
+
+
+.invoice {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  background-color: lightblue;
+
+  
+}
+.head h2{
+    border-bottom: 2px solid grey;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.companyinfo {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+.companylogo {
+  margin-right: 70px;
+  display: flex;
+}
+.companydetails {
+  padding: 10px;
+  margin-right: 20px;
+}
+.companylogo img {
+  width: 50px;
+  height: 50px;
+}
+.companylogo p {
+  font-weight: bold;
+}
+.billinginfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.billinginfo h3 {
+  color: gray;
+  width: fit-content;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+  padding: 10px;
+ 
+ 
+}
+
+.billingdetails {
+  margin-left: 80px;
+  padding: 10px;
+  
+}
+
+.billingaddress {
+    margin-left: 20px;
+    padding: 10px;
+  
+}
+.billingaddress,
+.billingdetails {
+  flex: 1;
+}
+
+.hr {
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.productdetails {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.productdetails table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productdetails th,
+.productdetails td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.productdetails th {
+  background-color: lightblue;
+}
+
+.signature {
+  display: grid;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.sign {
+  height: 50px;
+  width: 100px;
+}
+.signature h2 {
+  margin-left: 10px;
+}
