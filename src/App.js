@@ -10,6 +10,10 @@ import p7 from './draft (2).png';
 import p8 from './share (2).png';
 import p9 from './new-message (1).png';
 import p10 from './invoice (1).png';
+import p11 from './add.png';
+import p12 from './logo2.png';
+
+
 import { useHistory } from 'react-router-dom';
 
 
@@ -23,8 +27,8 @@ const App = () => {
         <header className={classes.header}>
         <div className={classes.headerLeft}>
           <div className={classes.logoContainer}>
-            <img src={p2} alt="SAP Logo" className={classes.logo} />
-            <span className={classes.companyName}>SAP Innovation Technology</span>
+            <img src={p12} alt="SAP Logo" className={classes.logo} />
+            <span className={classes.companyName}>Assertive Innovation Technology</span>
           </div>
           <div className={classes.Text}>Invoice Builder</div>
           <div className={classes.blueStripe}>
@@ -46,6 +50,7 @@ const App = () => {
   </div>
 </div>
       </header>
+      <div className={classes.Maincontent}>
 
       <div className={classes.sidebar}>
   <ul>
@@ -59,16 +64,8 @@ const App = () => {
 
       <div className={classes.content}>
         <header className={classes.header1}>
-        <div className={classes.searchbox}>
-  <img src={p1} alt="Search Icon" className={classes["search-icon"]} />
-  <div className={classes["search-dropdown"]}>
-    <input type="text" placeholder="Search..." />
-    <button>Search</button>
-  </div>
-</div>
 
-
-          <div className={classes.searchbox1}>
+        <div className={classes.searchbox1}>
             <div className={classes.searchdropdown1}>
               <select>
                 <option value="search_invoice">Filter Invoice</option>
@@ -78,8 +75,21 @@ const App = () => {
               </select>          
             </div>
           </div>
+
+        <div className={classes.searchbox}>
+  
+  <div className={classes["search-dropdown"]}>
+    <input type="text" placeholder="Search..." />
+    <button>
+    <img src={p1} alt="Search Icon" className={classes["search-icon"]} />
+      Search</button>
+  </div>
+</div>
+
+
+        
         </header>
-        <div className={classes["table-container"]}>
+        <div className={classes.tablecontainer}>
           
     
           <table className={classes.datatable}>
@@ -115,8 +125,12 @@ const App = () => {
                 <td>$100</td>
                 <td>10%</td>
                 <td>No</td>
-                <td><button onClick={previewHandler}>Select</button></td>
-              </tr>
+                <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>              </tr>
             
               <tr>
                 <td>2</td>
@@ -131,8 +145,12 @@ const App = () => {
                 <td>$200</td>
                 <td>5%</td>
                 <td>Yes</td>
-                <td><button onClick={previewHandler}>Select</button></td>
-              </tr>
+                <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>               </tr>
               <tr>
                 <td>3</td>
                 <td>INV003</td>
@@ -146,8 +164,12 @@ const App = () => {
                 <td>$150</td>
                 <td>8%</td>
                 <td>No</td>
-                <td><button onClick={previewHandler}>Select</button></td>
-              </tr>
+                <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>               </tr>
              
             </tbody>
 
@@ -167,8 +189,12 @@ const App = () => {
       <td>$100</td>
       <td>10%</td>
       <td>No</td>
-      <td><button onClick={previewHandler}>Select</button></td>
-    </tr>
+      <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>     </tr>
     <tr>
       <td>5</td>
       <td>INV005</td>
@@ -182,8 +208,12 @@ const App = () => {
       <td>$200</td>
       <td>5%</td>
       <td>Yes</td>
-      <td><button onClick={previewHandler}>Select</button></td>
-    </tr>
+      <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>     </tr>
     <tr>
       <td>6</td>
       <td>INV006</td>
@@ -197,8 +227,12 @@ const App = () => {
       <td>$150</td>
       <td>8%</td>
       <td>No</td>
-      <td><button onClick={previewHandler}>Select</button></td>
-    </tr>
+      <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>     </tr>
    
     <tr>
       <td>7</td>
@@ -213,8 +247,12 @@ const App = () => {
       <td>$120</td>
       <td>7%</td>
       <td>No</td>
-      <td><button onClick={previewHandler}>Select</button></td>
-    </tr>
+      <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>     </tr>
     <tr>
       <td>8</td>
       <td>INV008</td>
@@ -228,12 +266,88 @@ const App = () => {
       <td>$250</td>
       <td>6%</td>
       <td>Yes</td>
-      <td><button onClick={previewHandler}>Select</button></td>
-    </tr>
+      <td>
+  <button className={classes.button} onClick={previewHandler}>
+    <img src={p11} className={classes.add} alt="Add" />
+    <span className={classes.tooltip}>Select Template</span>
+  </button>
+</td>     </tr>
 
           </table>
         </div>
       </div>
+</div>
+
+      <footer className={classes.footer}>
+        <div className={classes.footerContent}>
+          <div className={classes.footerColumn}>
+            <h4>Assertive Innovation Solution</h4>
+            <ul>
+              <li>Create a Form</li>
+              <li>My Forms</li>
+              <li>Pricing</li>
+              <li>Assertive Solution Pvt. Ltd.</li>
+              <li>Examples</li>
+              <li>Products</li>
+              <li>Features</li>
+              <li>Tools</li>
+              <li>Alternatives</li>
+              <li>Marketplace</li>
+            </ul>
+          </div>
+          <div className={classes.footerColumn}>
+            <h4>Templates</h4>
+            <ul>
+              <li>Form Themes</li>
+              <li>Form Widgets</li>
+              <li>Integrations</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div className={classes.footerColumn}>
+            <h4>Contact Us</h4>
+            <ul>
+              <li>User Guide</li>
+              <li>Help</li>
+              <li>Assertive Academy</li>
+              <li>Webinars</li>
+              <li>Professional Services</li>
+              <li>Report Abuse</li>
+              <li>Report Copyright Issue</li>
+            </ul>
+          </div>
+          <div className={classes.footerColumn}>
+            <h4>Company</h4>
+            <ul>
+              <li>About Us</li>
+              <li>Media Kit</li>
+              <li>In the News</li>
+              <li>Newsletters</li>
+              <li>Partnerships</li>
+              <li>Blog</li>
+              <li>Apps</li>
+            </ul>
+          </div>
+        </div>
+        <div className={classes.footerBottom}>
+          <p>
+            4 Embarcadero Center, Suite 780, New York CA 94111 <br />© 2024
+            Assertive Sol. The name "Assertive" and the Assertive logo are registered
+            trademarks of Assertive Inc.
+          </p>
+          <div className={classes.footerLanguage}>
+            <span>English</span>
+          </div>
+          <div className={classes.footerLinks}>
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Security</li>
+              <li>Accessibility Statement</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

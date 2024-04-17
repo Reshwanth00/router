@@ -43,7 +43,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 2px solid #c9660f;
+    border: 2px solid #0b0b9e;
   }
   
   .Collaborators {
@@ -82,7 +82,7 @@
   .newCustomerForm {
     font-size: 20px;
     font-weight: bold;
-    color: #c9660f;
+    color: #0b0b9e;
   }
   
   .Text {
@@ -155,6 +155,12 @@
   .dropdownBox {
     display: flex;
     align-items: center;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size:x-large ;
   }
   
   .dropdownItem {
@@ -190,7 +196,7 @@
     padding: 20px;
     border-radius: 10px;
     margin-left: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .sidebar > div {
@@ -241,8 +247,9 @@
     justify-content: center;
     align-items: center;
     padding: 10px 5px;
-    margin-left: 20px;
+    margin-right: 80px;
     border-radius: 5px;
+    
   }
 
   .layer{
@@ -329,7 +336,7 @@
   }
 
   .use:hover{
-    background-color: #8d8adb;
+    background-color:  #5a5ab0;
     
   }
   
@@ -396,4 +403,6 @@
     margin-left: 40px;
     font-weight: bold;
   }
+  
+  
   

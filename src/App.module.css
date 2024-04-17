@@ -15,7 +15,7 @@
 }
 .header1{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 10px;
   
 }
@@ -52,7 +52,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 2px solid  #c9660f;
+  border: 2px solid #0b0b9e;
  
 }
 .Collaborators {
@@ -95,7 +95,7 @@
 .newCustomerForm {
   font-size: 20px;
   font-weight: bold;
-  color: #c9660f;
+  color: #0b0b9e;
 }
 .Text{
   margin-left: 30px;
@@ -140,6 +140,7 @@
 .searchbox {
   display: flex;
   align-items: center;
+ 
 }
 
 .search-dropdown {
@@ -163,13 +164,21 @@
   align-items: center;
 }
 
-.searchbox input,
+.searchbox input{
+  width: 600px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  
+}
 .searchbox1 input,
 .searchdropdown1 select {
   padding: 5px;
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
+ 
 }
 
 .search-dropdown button {
@@ -179,22 +188,32 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-dropdown button:hover {
   background-color: #0b0b9e;
 }
-
+.templatebox{
+  display: flex;
+  justify-content: center;
+}
 .sidebar {
   background-color: #333333;
   color: #fff;
-  width: 235px;
-  height: 100%;
-  position: fixed;
+  width: 280px;
+  height: 620px;
+ 
   top: 0;
   left: 0;
   overflow-y: auto;
-  margin-top: 113px;
+  margin-top: 40px;
+}
+.Maincontent{
+  display: flex;
+  
 }
 .sidebarIcon {
   width: 20px;
@@ -217,19 +236,19 @@
 }
 
 .sidebar li:hover {
-  background-color: #c9660f;
+  background-color:  #5a5ab0;
 }
 
 .content {
-  margin-left: 220px;
+  margin-left: 10px;
   padding: 20px;
   margin-top: 30px;
   overflow-y: auto;
 }
 
-.table-container {
+.tablecontainer {
   margin-top: 20px;
-  overflow-x: auto;
+ 
 }
 
 .datatable {
@@ -265,4 +284,100 @@
 
 .datatable td button:hover {
   background-color: #0b0b9e;
+}
+
+.add{
+  height: 20px;
+  width: 20px;
+}
+
+
+.button {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.footer {
+  background-color: #e3e5f5;
+  color: black;
+  padding: 20px 0;
+  
+  border-radius: 10px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerColumn {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.footerColumn h4 {
+  font-size: 18px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 5px;
+}
+
+.footerBottom {
+  margin-top: 30px;
+}
+
+.footerBottom p {
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+.footerLanguage {
+  margin-bottom: 10px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.footerLinks ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.footerLinks ul li {
+  margin-right: 10px;
+  margin-left: 40px;
+  font-weight: bold;
 }
